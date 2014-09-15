@@ -1,0 +1,65 @@
+/*
+ * adminbar
+ */
+#wpadminbar {
+    z-index: 0 !important;
+}
+
+
+/*
+ * Menu navigation
+ */
+.theme-dropdown .dropdown-menu {
+  display: block;
+  position: static;
+  margin-bottom: 20px;
+}
+
+.theme-showcase > p > .btn {
+  margin: 5px 0;
+}
+
+
+
+/*
+ * Carousel
+ */
+.featured-thumbnail {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#gallery-1 .gallery-item {
+    width: auto;
+    margin: 10px;
+    float: left;
+}
+
+
+
+/*
+ * post image
+ */
+.wp-caption-text.gallery-caption {
+    display: none;
+}
+
+
+/*
+ * comments
+ */
+.comments {
+    background: lightgray;
+    padding: 0 5px 5px 15px;
+    margin-left: -10px;
+    margin-right: 10px;
+}
+
+.container {
+     padding-right: 0;
+     padding-left: 0;
+}
+.container > .navbar-header, .container > .navbar-collapse {
+     margin-right: 0;
+     margin-left: 0;
+}
