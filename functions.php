@@ -3,13 +3,19 @@
  * WP core code
  */
 add_theme_support('post-thumbnails');
-add_image_size( 'bootstrap-1147x814', 1147, 814 );
-add_image_size( 'bootstrap-1000x667', 1000, 667 );
-add_image_size( 'bootstrap-395x395', 395, 395 );
-add_image_size( 'bootstrap-595x1200', 595, 1200 );
-add_image_size( 'bootstrap-600x1200', 600, 1200 );
-add_image_size( 'bootstrap-399x266', 399, 266 );
-add_image_size( 'bootstrap-300x300', 300, 300 );
+
+
+
+if ( function_exists( 'add_image_size' ) ) {
+    add_image_size( 'bootstrap-1147x814', 1147, 814 );
+    add_image_size( 'bootstrap-1000x667', 1000, 667 );
+    add_image_size( 'bootstrap-395x395', 395, 395 );
+    add_image_size( 'bootstrap-595x1200', 595, 1200 );
+    add_image_size( 'bootstrap-600x1200', 600, 1200 );
+    add_image_size( 'bootstrap-399x266', 399, 266 );
+    add_image_size( 'bootstrap-300x300', 300, 300 );
+    add_image_size( 'single-featured-image', 1000, 200, true );
+}
 
 function register_my_menu() {
     register_nav_menu('header-menu',__( 'Header Menu' ));
