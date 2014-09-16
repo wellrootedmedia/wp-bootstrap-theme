@@ -66,8 +66,10 @@
         $(".carousel-indicators li").activateClass();
         $("#menu-main-menu .menu-item").DropDownAddClass();
 
-        $('.gallery-item').each(function(){
-            $(this).addClass('img-responsive');
+        $('.gallery-icon').each(function(){
+            $(this)
+                .find('img')
+                .addClass('img-responsive');
         });
 
         $(".gallery-icon")

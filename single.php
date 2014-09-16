@@ -17,7 +17,7 @@
                     </div>
                 <?php endif; ?>
 
-                <div class="well">
+                <div class="">
                     <?php the_content(); ?>
                 </div>
 
