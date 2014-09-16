@@ -3,18 +3,12 @@
 <div class="container marketing">
 
     <?php while ( have_posts() ) : the_post(); ?>
-<!--        <div class="col-lg-4">-->
-<!--            <img class="img-circle" src="data:image/png;base64," data-src="holder.js/140x140" alt="Generic placeholder image">-->
-<!--            <h2>Heading</h2>-->
-<!--            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>-->
-<!--            <p><a class="btn btn-default" href="#">View details &raquo;</a></p>-->
-<!--        </div>-->
 
         <div class="row featurette">
             <div class="col-md-8">
                 <?php
                 if ( has_post_thumbnail() ) {
-                    the_post_thumbnail( 'single-featured-image', array('class' => 'img-responsive') );
+                    the_post_thumbnail( 'single-featured-image', array('class' => 'img-thumbnail') );
                 }
                 ?>
                 <?php _e( subTitle( $post ) ); ?>
