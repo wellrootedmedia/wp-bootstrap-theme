@@ -42,9 +42,9 @@ function subTitle( $postTitle ) {
     $data = "";
     $sub_title = get_post_meta( $postTitle->ID, 'subtitle', true );
     if( $sub_title != '' ) {
-        $data .= '<h2 class="featurette-heading">'. $postTitle->post_title . ' <span class="text-muted">'. $sub_title .'</span></h2>';
+        $data .= '<h1 class="featurette-heading">'. $postTitle->post_title . ' <span class="text-muted">'. $sub_title .'</span></h1>';
     } else {
-        $data .= '<h2 class="featurette-heading">'. $postTitle->post_title . '</h2>';
+        $data .= '<h1 class="featurette-heading">'. $postTitle->post_title . '</h1>';
     }
 
     return $data;

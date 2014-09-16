@@ -1,9 +1,9 @@
 
 
 </div><!-- /.container -->
-</div>
+</div><!-- wrap -->
 
-<!-- FOOTER -->
+
 <footer>
 
 <!--    <div class="navbar">-->
@@ -16,8 +16,16 @@
 <!--    </div>-->
 
     <div class="container">
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; <?php _e(date("Y")); ?> <?php bloginfo("name"); ?> &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="pull-left">
+                    <p>&copy; <?php _e(date("Y")); ?> <?php bloginfo("name"); ?> &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+                </div>
+                <div class="pull-right">
+                    <p><a href="#top">Back to top</a></p>
+                </div>
+            </div>
+        </div>
     </div>
 </footer>
 
@@ -74,7 +82,7 @@
                 title : { type : "inside" }
             },
             beforeLoad: function() {
-                this.title = $(this.element)
+                this.title = $  (this.element)
                     .find("img")
                     .attr("alt");
             }

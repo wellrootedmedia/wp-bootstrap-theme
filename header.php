@@ -33,24 +33,20 @@
         }
         ?></title>
 
+    <link href="<?php echo get_stylesheet_directory_uri(); ?>/carousel.css" rel="stylesheet">
+    <link href="<?php echo get_stylesheet_directory_uri(); ?>/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="<?php echo get_stylesheet_directory_uri(); ?>/assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="<?php echo get_stylesheet_directory_uri(); ?>/style.css" rel="stylesheet">
+
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/html5shiv.js"></script>
     <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/respond.min.js"></script>
     <![endif]-->
 
-    <!-- Custom styles for this template -->
-    <link href="<?php echo get_stylesheet_directory_uri(); ?>/carousel.css" rel="stylesheet">
-
-    <!-- Bootstrap core CSS -->
-    <link href="<?php echo get_stylesheet_directory_uri(); ?>/dist/css/bootstrap.css" rel="stylesheet">
-    <link href="<?php echo get_stylesheet_directory_uri(); ?>/assets/css/bootstrap-responsive.css" rel="stylesheet">
-<!--    <link href="--><?php //echo get_stylesheet_directory_uri(); ?><!--/assets/css/docs.css" rel="stylesheet">-->
-    <link href="<?php echo get_stylesheet_directory_uri(); ?>/style.css" rel="stylesheet">
-
     <?php wp_enqueue_script('jquery'); ?>
-
     <?php wp_head(); ?>
+
     <script type="text/javascript">
 
         var _gaq = _gaq || [];

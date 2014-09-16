@@ -5,15 +5,25 @@
     <?php while ( have_posts() ) : the_post(); ?>
 
         <div class="row featurette">
+
             <div class="col-md-8">
-                <?php
-                if ( has_post_thumbnail() ) {
-                    the_post_thumbnail( 'single-featured-image', array('class' => 'img-thumbnail') );
-                }
-                ?>
+                <?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'single-featured-image', array('class' => 'img-thumbnail') ); } ?>
+
                 <?php _e( subTitle( $post ) ); ?>
-                <p class="lead"><?php the_content(); ?></p>
+
+                <?php if ( in_array( 'category', get_object_taxonomies( get_post_type() ) ) ) : ?>
+                    <div class="entry-meta">
+                        <span class="cat-links">Categories: <?php echo get_the_category_list( _x( ', ', 'Used between list items, there is a space after the comma.', 'navbar-fixed' ) ); ?></span>
+                    </div>
+                <?php endif; ?>
+
+                <div class="well">
+                    <?php the_content(); ?>
+                </div>
+
+                <?php the_tags( '<div class="entry-meta">Tags: <span class="tag-links">', ', ', '</span></div>' ); ?>
             </div>
+
             <div class="col-md-4">
                 <form role="search" method="get" id="searchform" class="searchform navbar-form navbar-left" action="<?php bloginfo('url'); ?>/index.php">
                     <div class="form-group">
@@ -34,7 +44,7 @@
             </div>
         </div>
 
-    <?php endwhile; // end of the loop. ?>
+    <?php endwhile; ?>
 
     <div class="clear"></div>
 
