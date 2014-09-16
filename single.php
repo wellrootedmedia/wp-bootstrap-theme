@@ -30,7 +30,7 @@
             </div>
         </div>
 
-        <div class="clear"></div>
+        <hr class="featurette-divider">
 
         <div class="row featurette">
             <div class="col-md-12">
