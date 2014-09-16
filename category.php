@@ -1,12 +1,14 @@
 <?php
 get_header();
 global $post;
-$category = get_the_category();
+$thisCat = get_category(get_query_var('cat'),false);
+$catId = $thisCat->term_id;
+$catName = $thisCat->cat_name;
 ?>
 
 <div class="container marketing">
 
-    <h1><?php _e("Category: " . $category[0]->cat_name); ?></h1>
+    <h1><?php _e("Category: " . $catName); ?></h1>
 
     <hr class="featurette-divider">
 
@@ -14,7 +16,7 @@ $category = get_the_category();
 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 query_posts( array
     (
-        'cat' => $category[0]->cat_ID,
+        'cat' => $catId,
         'posts_per_page' => '10',
         'orderby' => 'menu_oder',
         'order' => 'DESC',

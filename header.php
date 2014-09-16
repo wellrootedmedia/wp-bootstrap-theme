@@ -150,7 +150,6 @@
                         </div>
 
                     <?php endwhile; ?>
-                    <?php wp_reset_query(); ?>
                 </div>
 
                 <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
@@ -172,6 +171,7 @@
             </div>
 
         <?php endif; ?>
+        <?php wp_reset_query(); ?>
 
     <?php endif; ?>
 
