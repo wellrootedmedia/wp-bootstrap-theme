@@ -12,16 +12,16 @@
                 <?php _e( subTitle( $post ) ); ?>
 
                 <?php if ( in_array( 'category', get_object_taxonomies( get_post_type() ) ) ) : ?>
-                    <div class="entry-meta">
+                    <div class="entry-meta top">
                         <span class="cat-links">Categories: <?php echo get_the_category_list( _x( ', ', 'Used between list items, there is a space after the comma.', 'navbar-fixed' ) ); ?></span>
                     </div>
                 <?php endif; ?>
 
-                <div class="">
+                <div class="col-md-12">
                     <?php the_content(); ?>
                 </div>
 
-                <?php the_tags( '<div class="entry-meta">Tags: <span class="tag-links">', ', ', '</span></div>' ); ?>
+                <div class="entry-meta bottom">Tags: <?php the_tags( '<span class="tag-links">', ', ', '</span>' ); ?></div>
             </div>
 
             <div class="col-md-4">

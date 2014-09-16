@@ -44,9 +44,21 @@
     display: none;
 }
 
-
 .well {
     margin-top: 20px;
+}
+
+.entry-meta.top {
+    margin-bottom: 10px;
+    border-bottom: 1px solid;
+}
+.entry-meta.bottom {
+    margin-top: 10px;
+    border-top: 1px solid;
+}
+
+.col-md-12 {
+    word-wrap: break-word;
 }
 
 footer p {
