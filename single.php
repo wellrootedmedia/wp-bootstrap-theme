@@ -17,7 +17,7 @@
                     </div>
                 <?php endif; ?>
 
-                <div class="col-md-12">
+                <div class="col-md-12 single-content">
                     <?php the_content(); ?>
                 </div>
 

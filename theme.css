@@ -37,9 +37,7 @@
 
 
 
-/*
- * post image
- */
+/* post */
 .wp-caption-text.gallery-caption {
     display: none;
 }
@@ -59,6 +57,11 @@
 
 .col-md-12 {
     word-wrap: break-word;
+}
+
+.col-md-12.single-content {
+    padding-right: 0;
+    padding-left: 0;
 }
 
 footer p {

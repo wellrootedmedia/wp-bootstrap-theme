@@ -69,7 +69,7 @@
         $('.gallery-icon').each(function(){
             $(this)
                 .find('img')
-                .addClass('img-responsive');
+                .addClass('img-thumbnail');
         });
 
         $(".gallery-icon")
