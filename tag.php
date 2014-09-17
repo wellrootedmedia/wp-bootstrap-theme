@@ -1,9 +1,7 @@
 <?php
 get_header();
 global $post;
-$thisCat = get_category(get_query_var('cat'),false);
-$catId = $thisCat->term_id;
-$catName = $thisCat->cat_name;
+$term_id = get_query_var('tag_id');
 ?>
 
 <div class="container marketing">
@@ -16,7 +14,7 @@ $catName = $thisCat->cat_name;
 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 query_posts( array
     (
-        'tag' => $tagName,
+        'tag_id' => $term_id,
         'posts_per_page' => '10',
         'orderby' => 'menu_oder',
         'order' => 'DESC',
