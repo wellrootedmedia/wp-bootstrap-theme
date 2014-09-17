@@ -4,15 +4,6 @@ get_header();
 ?>
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-    <div class="yellow">
-        <div class="container">
-            <div class="row">
-                <div class="page-title-wrapper">
-                    <?php echo the_content(); ?>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="container">
         <div class="row page-content">
             <div class="col-md-12">
@@ -22,7 +13,7 @@ get_header();
 
                     <form method="post" action="<?php echo get_stylesheet_directory_uri(); ?>/contact/classes/contact.php" name="contactform" id="contactform">
                         <fieldset>
-                            <legend>Please fill in the following form to contact us</legend>
+                            <legend><?php echo the_content(); ?></legend>
 
                             <label for="name" accesskey="U"><span class="required">*</span> Your Name</label>
                             <input name="name" type="text" id="name" size="30" value="" class="form-control" />
