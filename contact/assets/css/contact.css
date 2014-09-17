@@ -1,0 +1,30 @@
+
+
+#message { margin: 10px 0; padding: 0; }
+
+.error_message { display: block; line-height: 22px; background: #FBE3E4 url('../img/error.gif') no-repeat 10px 6px; padding: 3px 10px 3px 35px; color:#8a1f11;border: 1px solid #FBC2C4; -moz-border-radius:5px; -webkit-border-radius:5px; }
+
+ul.error_messages {
+    margin-bottom: 0;
+    padding: 0;
+}
+ul.error_messages li { height: 22px; line-height: 22px; color:#333; }
+
+.loader { padding: 0 10px; }
+
+#contact #success_page h1 { background: url('../img/success.gif') left no-repeat; padding-left:22px; }
+
+acronym { border-bottom:1px dotted #ccc; }
+
+input[type="checkbox"] {
+  width:20px !important;
+  margin: 4px 0 0;
+  margin-top: 1px \9;
+  float: left;
+  *margin-top: 0;
+  line-height: normal;
+  cursor: pointer;
+}
+input[type="radio"] {
+  width:20px !important;
+}
